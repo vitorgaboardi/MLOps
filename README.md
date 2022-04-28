@@ -1,6 +1,11 @@
 # Introdução
 
-Este repositório servirá como portfólio para a realização de atividades relacionadas com *Machine Learning*, além de mostrar certificados de cursos feitos durante o semestre 2022.1. 
+Este repositório servirá como portfólio para a realização de operações relacionadas com *Machine Learning* (MLOps).
+
+# Organização de pastas e projetos
+
+* **Certificados**: Certificados dos cursos realizados referente a área de MLOPS.
+* **Predicting Car Prices**: Boas práticas de programação para aplicações de ML. Será considerado um estudo de caso para predizer o preço de carros utilizando K-Means. 
 
 
 # Certificados
