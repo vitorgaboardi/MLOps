@@ -1,6 +1,6 @@
 # Introdução
 
-Neste projeto, será aplicado boas práticas de programação em *Machine Learning* considerando o estudo de caso de **prediçao de preços de carros** utilizando KNN.
+Neste projeto, será aplicado boas práticas de programação em *Machine Learning* considerando o estudo de caso de **predição de preços de carros** utilizando KNN.
 
 # Organização
 
@@ -33,7 +33,7 @@ Autorize a criação do ambiente, quando requisitado.
 conda activate mlops
 ```
 
-3. Instalar as seguintes dependências: *pandas*, *numpy*, *sklearn*, *matplotlib*, *pylint*:
+3. Instalar as seguintes dependências: *pandas*, *numpy*, *scikit-learn*, *matplotlib*, *pylint*:
 
 ```
 conda install pandas numpy scikit-learn matplotlib pylint
@@ -44,7 +44,7 @@ Ao finalizar as instalações, é possível executar o projeto através dos coma
 
 # Execução
 
-O arquivo *carpriceprediction-v1.py* obteve uma nota de 4.36/10 pelo *pylint*. Após modificar seguindo as recomendações, obteve-se uma nota 10/10, conforme mostrado na figura abaixo. O arquivo *car_price_prediction.py* contém essas modificações.
+O arquivo *carpriceprediction-v1.py* obteve uma nota de **4.36/10** pelo *pylint*. Após modificar seguindo as recomendações, obteve-se uma nota 10/10, conforme mostrado na figura abaixo. O arquivo *car_price_prediction.py* contém essas modificações.
 
 ![pylint result](./images/pylint_result.png)
 
@@ -60,5 +60,5 @@ pylint car_price_prediction.py
 python3 car_price_prediction.py
 ```
 
-Quando o código acima for executado, será impresso os resultados do RSME (*Root Mean Square Error*) em função do tipo de modelo (univariável ou multivariável) e da quantidade de vizinhos (k). Além disso, duas figuras resumindo esses valores em função do valor de k serão salvas dentro da pasta *imagem*.
+Quando o código acima for executado, será impresso os resultados do RSME (*Root Mean Square Error*) em função do tipo de modelo (univariável ou multivariável) e da quantidade de vizinhos (*k*). Além disso, duas figuras resumindo esses valores em função do valor de *k* serão salvas dentro da pasta *imagem*.
 

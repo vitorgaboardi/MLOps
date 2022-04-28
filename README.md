@@ -5,7 +5,7 @@ Este repositório servirá como portfólio para a realização de operações re
 # Organização de pastas e projetos
 
 * **Certificados**: Certificados dos cursos realizados referente a área de MLOPS.
-* **Predicting Car Prices**: Boas práticas de programação para aplicações de ML. Será considerado um estudo de caso para predizer o preço de carros utilizando K-Means. 
+* **Predicting Car Prices**: Boas práticas de programação para aplicações de ML. Será considerado um estudo de caso para predizer o preço de carros utilizando KNN. 
 
 
 # Certificados
