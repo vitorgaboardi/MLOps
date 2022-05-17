@@ -4,6 +4,7 @@ Date: May 2022
 Image construction comparing gas prices in Brazil.
 """
 
+from datetime import timedelta
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import style
@@ -72,15 +73,57 @@ temer = gas_prices_rn.copy()[
     (gas_prices_rn['DATA'].dt.year < 2019)]
 bolsonaro = gas_prices_rn.copy()[gas_prices_rn['DATA'].dt.year >= 2019]
 
-# saving figure
-plt.figure(figsize=(15, 6))
+# creating figure
+# plots
+fig, ax1 = plt.subplots(nrows=1, ncols=1,figsize=(15,6))
 plt.plot(lula['DATA'], lula['MÉDIA MOVEL'],color='#FF0000',label="Lula")
 plt.plot(dilma['DATA'], dilma['MÉDIA MOVEL'],color='#4169e1',label='Dilma')
 plt.plot(temer['DATA'], temer['MÉDIA MOVEL'],color='#008000',label='Temer')
 plt.plot(bolsonaro['DATA'], bolsonaro['MÉDIA MOVEL'],color='#8b5742',label='Bolsonaro')
 plt.grid(alpha=0.5)
 plt.ylim(1.9,6.5)
-plt.legend()
-plt.title("Preço médio da gasolina no Estado do Rio Grande do Norte",fontsize=20,weight='bold')
+
+# background and legend configuration
+ax1.set_facecolor('white')
+ax1.legend(loc='upper left', bbox_to_anchor=(0.01, 0.52, 0.5, 0.5), facecolor='white')
+ax1.tick_params(bottom=0, left=0)
+ax1.set_yticks([2.0, 3, 4, 5, 6])
+fig.patch.set_facecolor('white')
+fig.patch.set_bounds(10,10,10,10)
+for location in ['left', 'right', 'top', 'bottom']:
+    ax1.spines[location].set_visible(False)
+
+# title and subtitle
+ax1.text(0, 1.09,
+	'Gasto médio para encher o tanque aumenta em 82,8% desde o governo Lula *',
+	size=20, weight='bold',transform=ax1.transAxes)
+ax1.text(0, 1.03,
+	'Preço médio da gasolina comum no Estado do Rio Grande do Norte',
+	size=18,transform=ax1.transAxes)
+
+# gas price bar
+BAR_SIZE = 300
+dataset = [lula,dilma,temer,bolsonaro]
+y_constant = [0.5,0,0.25,0.1]
+
+price = [round(data['PRECO'].mean()*45,2) for data in dataset]
+proportion = [round(price/(bolsonaro['PRECO'].mean()*45), 2) for price in price]
+
+y_pos = [round(data['MÉDIA MOVEL'].max()+constant,2) for data, constant in zip(dataset,y_constant)]
+x_min = [data['DATA'].iloc[int(len(data)/2)]-timedelta(BAR_SIZE) for data in dataset]
+x_max1 = [data['DATA'].iloc[int(len(data)/2)]+timedelta(BAR_SIZE) for data in dataset]
+x_max2 = [x + timedelta(2*BAR_SIZE*p) for x, p in zip(x_min,proportion)]
+x_txt_pos = [0.18,0.52,0.73,0.85]
+y_txt_pos = [0.32,0.465,0.71,0.90]
+
+for y,xmin,xmax1,xmax2,xtxt,ytxt,price in zip(y_pos,x_min,x_max1,x_max2,x_txt_pos,y_txt_pos,price):
+    ax1.hlines(y,xmin,xmax1,linewidth=10,color='black',alpha=0.3)
+    ax1.hlines(y,xmin,xmax2,linewidth=10,color='black')
+    ax1.text(xtxt,ytxt,'R$ '+str(price),transform=ax1.transAxes)
+
+# copyright
+ax1.text(0, -0.15,
+	'* Considerou-se um carro com 45 litros' + ' '*125 + 'Criado por Vitor G. Santos',
+	color = '#f0f0f0', backgroundcolor = '#4d4d4d',size=13,transform=ax1.transAxes)
 
 plt.savefig('./images/gas_prices_brazil.png')
