@@ -26,7 +26,7 @@ pylint gas_prices_brazil.py
 
 ## Pytest
 
-Foram realizados quatro testes para verificar o comportamento do programa: três deles estão relacionados com a leitura da base de dados e o quarto teste verifica se o resultado do cálculo da média móvel representa valores numéricos. Os testes estão definidos dentro do arquivo *test_gas_prices_brazil.py*.
+Foram realizados quatro testes para verificar o comportamento do programa: três deles estão relacionados com a leitura da base de dados e o quarto  verifica se o resultado do cálculo da média móvel representa valores numéricos. Os testes estão definidos dentro do arquivo *test_gas_prices_brazil.py*.
 
 Para instalar o *pytest*, ative o ambiente virtual do conda e execute o comando abaixo:
 
@@ -40,7 +40,7 @@ Para executar os testes, execute o seguinte comando:
 python -m pytest test_gas_prices_brazil.py
 ``` 
 
-Ao executar o comando acima, um *feedback* sobre os testes será mostrado no terminal. Se todos os testes forem aprovados, o resultado será parecido com o mostrado na figura abaixo:
+Ao executar o comando acima, um *feedback* sobre os testes será mostrado no terminal. Se todos os testes forem aprovados, o resultado mostrado será parecido com o mostrado na figura abaixo:
 
 ![pylint result](./images/pytest_result.png)
 
@@ -55,7 +55,7 @@ python3 gas_prices_brazil.py
 
 # Resultado
 
-Ao executar o programa, obtem-se a figura mostrado abaixo, que mostra a média de preço da gasolina comum entre os anos de 2014 a 2021 destacando o mandato dos respectivos presidentes.
+Ao executar o programa, obtem-se a figura mostrada abaixo, que mostra a média de preço da gasolina comum entre os anos de 2014 a 2021 destacando o mandato dos respectivos presidentes.
 
 
 ![gasolina](./images/gas_prices_brazil.png)

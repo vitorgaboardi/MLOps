@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 from matplotlib import style
 style.use('fivethirtyeight')
 
-
 def read_data(path, sep=''):
     """
     Read a comma-separated values (csv) file and stores in a dataframe using pandas.
@@ -19,7 +18,12 @@ def read_data(path, sep=''):
     path: string. Any valid string path of the csv.
     sep: string. Delimiter to use.
     """
-    data_frame = pd.read_csv(path, sep=sep)
+    try:
+        data_frame = pd.read_csv(path, sep=sep)
+    except ValueError:
+        print(f"Caminho do arquivo ou tipo do objeto inválido: {type(path)}")
+    except FileNotFoundError:
+        print(f'O seguinte caminho ou diretório não existe: {path}')
     return data_frame
 
 def columns_processing(data_frame,select_columns,rename_columns=''):
