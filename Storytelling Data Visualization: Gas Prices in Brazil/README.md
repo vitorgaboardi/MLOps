@@ -9,11 +9,11 @@ A criação da figura foi feita com base no dataset disponibilizado por [Matheus
 
 # Principios de código limpo
 
-O código foi desenvolvido levando em consideração boas práticas de programação. 
+O código foi desenvolvido levando em consideração boas práticas de programação. Os programas serão compilados utilizando o *Anaconda*. Para realizar a criação de um novo ambiente virtual que rode o programa, basta ler o arquivo README do projeto *Predicting car prices*.
 
 ## Pylint
 
-Obteve-se uma nota de 10.0/10.0 no *pylinu*, conforme mostrado na figura abaixo.
+Obteve-se uma nota de 10.0/10.0 no *pylint*, conforme mostrado na figura abaixo.
 
 ![pylint result](./images/pylint_result.png)
 
@@ -23,6 +23,26 @@ Obteve-se uma nota de 10.0/10.0 no *pylinu*, conforme mostrado na figura abaixo.
 ```
 pylint gas_prices_brazil.py
 ```
+
+## Pytest
+
+Foram realizados quatro testes para verificar o comportamento do programa: três deles estão relacionados com a leitura da base de dados e o quarto teste verifica se o resultado do cálculo da média móvel representa valores numéricos. Os testes estão definidos dentro do arquivo *test_gas_prices_brazil.py*.
+
+Para instalar o *pytest*, ative o ambiente virtual do conda e execute o comando abaixo:
+
+```
+conda install pytest
+``` 
+
+Para executar os testes, execute o seguinte comando:
+
+```
+python -m pytest test_gas_prices_brazil.py
+``` 
+
+Ao executar o comando acima, um *feedback* sobre os testes será mostrado no terminal. Se todos os testes forem aprovados, o resultado será parecido com o mostrado na figura abaixo:
+
+![pylint result](./images/pytest_result.png)
 
 # Execução
 
