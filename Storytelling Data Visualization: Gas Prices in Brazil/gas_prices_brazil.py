@@ -5,10 +5,17 @@ Image construction comparing gas prices in Brazil.
 """
 
 from datetime import timedelta
+import logging
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import style
 style.use('fivethirtyeight')
+
+logging.basicConfig(
+    filename='./logging.log',
+    level=logging.INFO,
+    filemode='w',
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 def read_data(path, sep=''):
     """
@@ -20,10 +27,13 @@ def read_data(path, sep=''):
     """
     try:
         data_frame = pd.read_csv(path, sep=sep)
+        assert data_frame is not None
+        assert len(data_frame.columns) > 0
+        logging.info('Dataframe lido corretamente')
     except ValueError:
-        print(f"Caminho do arquivo ou tipo do objeto inválido: {type(path)}")
+        logging.error('Caminho do arquivo ou tipo do objeto inválido: %s',type(path))
     except FileNotFoundError:
-        print(f'O seguinte caminho ou diretório não existe: {path}')
+        logging.error('O seguinte caminho ou diretório não existe: %s',path)
     return data_frame
 
 def columns_processing(data_frame,select_columns,rename_columns=''):
@@ -46,8 +56,8 @@ def rolling_mean(data_frame,target_column,num_samples):
 
     Args:
     data_frame: pandas dataFrame. Any valid string path of the csv.
-    select_columns: string. Column to compute the moving average.
-    rename_columns: int. Number of samples to consider in the moving average.
+    target_column: string. Column to compute the moving average.
+    num_samples: int. Number of samples to consider in the moving average.
     """
     moving_average_result = data_frame[target_column].rolling(num_samples).mean()
     return moving_average_result
@@ -99,7 +109,7 @@ for location in ['left', 'right', 'top', 'bottom']:
 
 # title and subtitle
 ax1.text(0, 1.09,
-	'Gasto médio para encher o tanque aumenta em 82,8% desde o governo Lula *',
+	'Gasto para encher o tanque aumenta em 102.2% desde o governo Lula *',
 	size=20, weight='bold',transform=ax1.transAxes)
 ax1.text(0, 1.03,
 	'Preço médio da gasolina comum no Estado do Rio Grande do Norte',
@@ -110,8 +120,8 @@ BAR_SIZE = 300
 dataset = [lula,dilma,temer,bolsonaro]
 y_constant = [0.5,0,0.25,0.1]
 
-price = [round(data['PRECO'].mean()*45,2) for data in dataset]
-proportion = [round(price/(bolsonaro['PRECO'].mean()*45), 2) for price in price]
+price = [round(data['PRECO'].iloc[-1]*45,2) for data in dataset]
+proportion = [round(price/(bolsonaro['PRECO'].iloc[-1]*45), 2) for price in price]
 
 y_pos = [round(data['MÉDIA MOVEL'].max()+constant,2) for data, constant in zip(dataset,y_constant)]
 x_min = [data['DATA'].iloc[int(len(data)/2)]-timedelta(BAR_SIZE) for data in dataset]
