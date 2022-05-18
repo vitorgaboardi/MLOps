@@ -2,6 +2,8 @@
 
 Neste projeto, será realizado a implementação de um programa que cria uma imagem a partir de uma base de dados comparando o preço da **gasolina comum** no estado do Rio Grande do Norte entre os anos de 2004 a 2021, destacando os governos de cada período.
 
+Vídeo resumindo o projeto: [![Open in Loom](https://img.shields.io/badge/-Video-83DA77?style=flat-square&logo=loom)](https://www.loom.com/share/94e1bc22cd274b9fa2bcbc8177c3a675)
+
 # Dataset
 
 A criação da figura foi feita com base no dataset disponibilizado por [Matheus Eduardo Freitag](https://www.kaggle.com/datasets/matheusfreitag/gas-prices-in-brazil?resource=download). Esse dataset possui dezoito colunas com informações que incluem data, preço médio, região e estado.
@@ -92,3 +94,4 @@ Isso irá permitir a visualização do projeto no *browser* através de uma URL 
 No *dashboard* desenvolvido, é possível ver com mais detalhes as informações mostradas no gráfico, como por exemplo dar zoom em um intervalo específico ou verificar o preço exato de um ponto da curva, conforme ilustrado na figura abaixo, onde é possível verificar que no dia 25 de janeiro de 2020, o preço médio da gasolina no Rio Grande do Norte estava em 4,809 reais.
 
 ![streamlit](./images/streamlit.png)
+
