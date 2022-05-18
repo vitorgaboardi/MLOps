@@ -73,7 +73,7 @@ Além disso, após aplicar o valor médio do preço para cada presidente, obteve
 
 # Streamlit
 
-Com o objetivo de visualizar de uma maneira interativa o gráfico proposto, criou-se uma aplicação no [StreamLit](https://streamlit.io/)
+Com o objetivo de visualizar de uma maneira interativa o gráfico proposto, criou-se uma aplicação no [StreamLit](https://streamlit.io/).
 
 Para instalar o streamlist, basta executar o comando abaixo logado no ambiente virtual do anaconda:
 
@@ -81,12 +81,14 @@ Para instalar o streamlist, basta executar o comando abaixo logado no ambiente v
 pip install streamlit
 ``` 
 
-Em seguida, para rodar o programa desenvolvido (*streamlit_app.py) basta executar o seguinte comando:
+Em seguida, para rodar o programa desenvolvido (*streamlit_app.py*) basta executar o seguinte comando:
 
 ```
 streamlit run streamlit_app.py
 ``` 
 
-Isso irá permitir a visualização do projeto no browser através de uma URL Local e uma URL externa. No dashboard desenvolvido, é possível ver com mais detalhes as informações mostradas no gráfico, como por exemplo dar zoom e verificar o preço exato de um ponto da curva, conforme ilustrado na figura abaixo, onde é possível verificar que no dia 25 de janeiro de 2020, o preço médio da gasolina no Rio Grande do Norte estava em 4,809 reais.
+Isso irá permitir a visualização do projeto no *browser* através de uma URL Local e outra externa. 
+
+No *dashboard* desenvolvido, é possível ver com mais detalhes as informações mostradas no gráfico, como por exemplo dar zoom em um intervalo específico ou verificar o preço exato de um ponto da curva, conforme ilustrado na figura abaixo, onde é possível verificar que no dia 25 de janeiro de 2020, o preço médio da gasolina no Rio Grande do Norte estava em 4,809 reais.
 
 ![streamlit](./images/streamlit.png)
