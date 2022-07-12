@@ -1,0 +1,18 @@
+
+[34m[1mwandb[39m[22m: Uploading file raw_data.csv to: "vitor-gabo/airbnb/raw_data.csv:latest" (raw_data)
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvitor-gabo[39m. Use [1m`wandb login --relogin`[22m to force relogin
+[34m[1mwandb[39m[22m: Tracking run with wandb version 0.12.21
+[34m[1mwandb[39m[22m: Run data is saved locally in [35m[1m/home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_195448-282v2bj0
+[34m[1mwandb[39m[22m: Run [1m`wandb offline`[22m to turn off syncing.
+[34m[1mwandb[39m[22m: Syncing run [33mwise-serenity-5
+[34m[1mwandb[39m[22m: ⭐️ View project at [34m[4mhttps://wandb.ai/vitor-gabo/airbnb
+[34m[1mwandb[39m[22m: 🚀 View run at [34m[4mhttps://wandb.ai/vitor-gabo/airbnb/runs/282v2bj0
+Artifact uploaded, use this artifact in a run by adding:
+    artifact = run.use_artifact("vitor-gabo/airbnb/raw_data.csv:latest")
+[34m[1mwandb[39m[22m: Waiting for W&B process to finish... [32m(success).
+
+
+[34m[1mwandb[39m[22m:
+[34m[1mwandb[39m[22m: Synced [33mwise-serenity-5[39m: [34m[4mhttps://wandb.ai/vitor-gabo/airbnb/runs/282v2bj0
+[34m[1mwandb[39m[22m: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+[34m[1mwandb[39m[22m: Find logs at: [35m[1m./wandb/run-20220711_195448-282v2bj0/logs

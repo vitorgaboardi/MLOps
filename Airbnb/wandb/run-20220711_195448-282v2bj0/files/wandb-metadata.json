@@ -1,0 +1,31 @@
+{
+    "os": "Linux-4.15.0-188-generic-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-07-11T22:54:52.537970",
+    "startedAt": "2022-07-11T22:54:48.740832",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "artifact",
+        "put",
+        "--name",
+        "airbnb/raw_data.csv",
+        "--type",
+        "raw_data",
+        "--description",
+        "The raw data from Airbnb - Rio de Janeiro",
+        "raw_data.csv"
+    ],
+    "state": "running",
+    "program": "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/bin/wandb",
+    "git": {
+        "remote": "https://github.com/vitorgaboardi/MLOps.git",
+        "commit": "db5ee1cb2702c01d3cc73418e452cf4718ed6bb8"
+    },
+    "email": "vitorgabo@hotmail.com",
+    "root": "/home/vitor/UFRN/Tecnologia da Informa\u00e7\u00e3o/2022.1/MLOps",
+    "host": "gaboardi",
+    "username": "vitor",
+    "executable": "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/bin/python"
+}

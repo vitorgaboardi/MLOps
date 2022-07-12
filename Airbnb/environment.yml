@@ -1,0 +1,20 @@
+name: mlops
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipython
+  - notebook
+  - jupyterlab
+  - cookiecutter
+  - hydra-core
+  - matplotlib
+  - pandas
+  - git
+  - pip
+  - requests
+  - python=3.8
+  - pip:
+      - wandb
+      - mlflow
+      - hydra-joblib-launcher

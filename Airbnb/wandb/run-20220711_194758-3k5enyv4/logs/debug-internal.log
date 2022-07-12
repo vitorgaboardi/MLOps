@@ -1,0 +1,70 @@
+2022-07-11 19:48:02,456 INFO    MainThread:23477 [internal.py:wandb_internal():90] W&B internal server running at pid: 23477, started at: 2022-07-11 19:48:02.456026
+2022-07-11 19:48:02,461 INFO    WriterThread:23477 [datastore.py:open_for_write():75] open: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/run-3k5enyv4.wandb
+2022-07-11 19:48:02,467 DEBUG   SenderThread:23477 [sender.py:send():236] send: header
+2022-07-11 19:48:02,467 DEBUG   SenderThread:23477 [sender.py:send():236] send: run
+2022-07-11 19:48:03,046 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: check_version
+2022-07-11 19:48:03,083 INFO    SenderThread:23477 [dir_watcher.py:__init__():216] watching files in: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files
+2022-07-11 19:48:03,083 INFO    SenderThread:23477 [sender.py:_start_run_threads():815] run started: 3k5enyv4 with start time 1657579678
+2022-07-11 19:48:03,084 DEBUG   SenderThread:23477 [sender.py:send():236] send: summary
+2022-07-11 19:48:03,084 INFO    SenderThread:23477 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-11 19:48:03,085 DEBUG   SenderThread:23477 [sender.py:send_request():250] send_request: check_version
+2022-07-11 19:48:03,279 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: run_start
+2022-07-11 19:48:03,282 DEBUG   HandlerThread:23477 [meta.py:__init__():35] meta init
+2022-07-11 19:48:03,282 DEBUG   HandlerThread:23477 [meta.py:__init__():49] meta init done
+2022-07-11 19:48:03,282 DEBUG   HandlerThread:23477 [meta.py:probe():209] probe
+2022-07-11 19:48:03,290 DEBUG   HandlerThread:23477 [meta.py:_setup_git():199] setup git
+2022-07-11 19:48:03,344 DEBUG   HandlerThread:23477 [meta.py:_setup_git():206] setup git done
+2022-07-11 19:48:03,345 DEBUG   HandlerThread:23477 [meta.py:_save_pip():53] save pip
+2022-07-11 19:48:03,348 DEBUG   HandlerThread:23477 [meta.py:_save_pip():67] save pip done
+2022-07-11 19:48:03,348 DEBUG   HandlerThread:23477 [meta.py:_save_conda():74] save conda
+2022-07-11 19:48:04,093 INFO    Thread-7  :23477 [dir_watcher.py:_on_file_created():269] file/dir created: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files/wandb-summary.json
+2022-07-11 19:48:04,094 INFO    Thread-7  :23477 [dir_watcher.py:_on_file_created():269] file/dir created: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files/requirements.txt
+2022-07-11 19:48:04,095 INFO    Thread-7  :23477 [dir_watcher.py:_on_file_created():269] file/dir created: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files/conda-environment.yaml
+2022-07-11 19:48:09,103 INFO    Thread-7  :23477 [dir_watcher.py:_on_file_created():269] file/dir created: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files/output.log
+2022-07-11 19:48:11,105 INFO    Thread-7  :23477 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files/output.log
+2022-07-11 19:48:13,108 INFO    Thread-7  :23477 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files/output.log
+2022-07-11 19:48:56,147 INFO    Thread-7  :23477 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files/conda-environment.yaml
+2022-07-11 19:48:56,350 DEBUG   HandlerThread:23477 [meta.py:_save_conda():84] save conda done
+2022-07-11 19:48:56,351 DEBUG   HandlerThread:23477 [meta.py:probe():247] probe done
+2022-07-11 19:48:56,382 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-11 19:48:56,383 DEBUG   SenderThread:23477 [sender.py:send_request():250] send_request: stop_status
+2022-07-11 19:48:56,384 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: log_artifact
+2022-07-11 19:48:56,394 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:56,395 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:56,395 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:56,396 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:56,397 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:56,397 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:56,398 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:56,398 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:56,399 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:48:57,148 INFO    Thread-7  :23477 [dir_watcher.py:_on_file_created():269] file/dir created: /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/files/wandb-metadata.json
+2022-07-11 19:48:57,171 DEBUG   SenderThread:23477 [sender.py:send():236] send: telemetry
+2022-07-11 19:48:57,172 DEBUG   SenderThread:23477 [sender.py:send_request():250] send_request: log_artifact
+2022-07-11 19:48:58,271 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:03,372 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:08,474 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:13,576 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:18,676 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:23,778 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:28,879 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:33,980 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:39,082 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:44,183 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:49,284 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:54,385 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:49:59,487 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:04,588 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:09,689 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:14,790 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:19,892 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:24,993 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:30,094 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:35,196 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:40,297 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:45,398 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:50,499 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:50:55,600 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:51:00,702 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:51:05,803 DEBUG   HandlerThread:23477 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-11 19:51:07,603 WARNING MainThread:23477 [internal.py:wandb_internal():153] Internal process interrupt: 1

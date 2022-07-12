@@ -1,0 +1,62 @@
+2022-07-11 19:47:58,348 INFO    MainThread:23460 [wandb_setup.py:_flush():76] Configure stats pid to 23460
+2022-07-11 19:47:58,350 INFO    MainThread:23460 [wandb_setup.py:_flush():76] Loading settings from /home/vitor/.config/wandb/settings
+2022-07-11 19:47:58,350 INFO    MainThread:23460 [wandb_setup.py:_flush():76] Loading settings from /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/settings
+2022-07-11 19:47:58,350 INFO    MainThread:23460 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'vitor-gabo', 'project': 'airbnb'}
+2022-07-11 19:47:58,350 WARNING MainThread:23460 [wandb_setup.py:_flush():76] Could not save program above cwd: /home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/bin/wandb
+2022-07-11 19:47:58,350 INFO    MainThread:23460 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program': '/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/bin/wandb'}
+2022-07-11 19:47:58,351 INFO    MainThread:23460 [wandb_init.py:_log_setup():461] Logging user logs to /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/logs/debug.log
+2022-07-11 19:47:58,351 INFO    MainThread:23460 [wandb_init.py:_log_setup():462] Logging internal logs to /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220711_194758-3k5enyv4/logs/debug-internal.log
+2022-07-11 19:47:58,351 INFO    MainThread:23460 [wandb_init.py:init():495] calling init triggers
+2022-07-11 19:47:58,352 INFO    MainThread:23460 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {'path': 'raw_data.csv'}
+2022-07-11 19:47:58,352 INFO    MainThread:23460 [wandb_init.py:init():548] starting backend
+2022-07-11 19:47:58,352 INFO    MainThread:23460 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-07-11 19:47:58,496 INFO    MainThread:23460 [backend.py:ensure_launched():217] starting backend process...
+2022-07-11 19:47:58,533 INFO    MainThread:23460 [backend.py:ensure_launched():222] started backend process with pid: 23477
+2022-07-11 19:47:58,538 INFO    MainThread:23460 [wandb_init.py:init():558] backend started and connected
+2022-07-11 19:47:58,603 INFO    MainThread:23460 [wandb_init.py:init():634] updated telemetry
+2022-07-11 19:47:58,727 INFO    MainThread:23460 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-07-11 19:48:03,045 INFO    MainThread:23460 [wandb_run.py:_on_init():1919] communicating current version
+2022-07-11 19:48:03,253 INFO    MainThread:23460 [wandb_run.py:_on_init():1923] got version response 
+2022-07-11 19:48:03,253 INFO    MainThread:23460 [wandb_init.py:init():700] starting run threads in backend
+2022-07-11 19:48:08,330 INFO    MainThread:23460 [wandb_run.py:_console_start():1893] atexit reg
+2022-07-11 19:48:08,331 INFO    MainThread:23460 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2022-07-11 19:48:08,332 INFO    MainThread:23460 [wandb_run.py:_redirect():1771] Redirecting console.
+2022-07-11 19:48:08,346 INFO    MainThread:23460 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-07-11 19:48:08,347 INFO    MainThread:23460 [wandb_init.py:init():732] run started, returning control to user process
+2022-07-11 19:48:10,165 INFO    MainThread:23460 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-07-11 19:48:10,170 INFO    MainThread:23460 [wandb_run.py:_restore():1834] restore
+2022-07-11 19:48:17,357 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:48:22,458 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:48:27,560 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:48:32,661 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:48:37,764 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:48:42,865 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:48:47,967 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:48:53,068 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:48:58,169 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:03,270 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:08,372 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:13,473 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:18,575 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:23,676 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:28,777 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:33,879 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:38,980 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:44,081 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:49,183 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:54,284 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:49:59,385 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:04,486 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:09,588 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:14,689 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:19,790 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:24,891 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:29,993 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:35,094 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:40,195 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:45,297 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:50,398 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:50:55,499 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:51:00,600 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None
+2022-07-11 19:51:05,701 INFO    MainThread:23460 [wandb_run.py:_on_finish():1991] got exit ret: None

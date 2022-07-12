@@ -1,0 +1,15 @@
+artifact_uri: file:///home/vitor/UFRN/Tecnologia%20da%20Informa%C3%A7%C3%A3o/2022.1/MLOps/Airbnb/mlruns/0/df287f2358a0436fba5a321c86f5eb4e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: df287f2358a0436fba5a321c86f5eb4e
+run_uuid: df287f2358a0436fba5a321c86f5eb4e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1657560720271
+status: 1
+tags: []
+user_id: vitor
