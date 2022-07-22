@@ -5,3 +5,6 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 /tmp/ipykernel_20517/736449753.py:2: SettingWithCopyWarning:
 A value is trying to be set on a copy of a slice from a DataFrame
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  airbnb.drop_duplicates(inplace=True)
+wandb: Network error (ConnectionError), entering retry loop.
+wandb: Network error (ConnectionError), entering retry loop.

@@ -1,12 +1,10 @@
 # Introdução
 
+Este projeto consiste em realizar uma análise dos preços do Airbnb levando em consideração a cidade do Rio de Janeiro. A ideia final do projeto é, a partir de um conjunto de informações básicas da residência, poder estimar o preço médio por dia dessa residência. Isto é, resolver um problema de regressão.
 
-# Organização
+Inicialmente, neste projeto, iremos realizar o pré-processamento dos dados, salvando diferentes versões do dataset no *wandb*, e realizando uma análise estatística para definir quais seriam as principais variáveis que podem ser utilizadas na solução do problema.
 
-* CarPricePrediction.ipynb: Notebook com a solução para a realizar a predição de preços de carros. Referência: [Dataquest](https://github.com/dataquestio/solutions/blob/master/Mission155Solutions.ipynb)
-* carpriceprediction-v1.py: Script Python com os códigos do Notebook (sem nenhuma adaptação).
-* car_price_prediction.py: Script Python para realizar a predição de preços de carro levando em consideração boas práticas de programação.
-* import-85.data: Dataset utilizado neste projeto. Referência: [UCI](https://archive.ics.uci.edu/ml/datasets/automobile)
+Em seguida, o dataset será separado em treinamento e teste, para então treinar um novo modelo e realizar o *deploy* do mesmo online.
 
 # Instalação de dependências
 
@@ -32,23 +30,11 @@ Autorize a criação do ambiente, quando requisitado.
 conda activate mlops
 ```
 
-# Execução
+# EDA (Exploratory Data Analysis)
 
-O arquivo *carpriceprediction-v1.py* obteve uma nota de **4.36/10** pelo *pylint*. Após modificar seguindo as recomendações, obteve-se uma nota 10/10, conforme mostrado na figura abaixo. O arquivo *car_price_prediction.py* contém essas modificações.
+Uma vez que o ambiente no conda já esteja instalado na sua máquina, será realizado uma análise dos dados com o objetivo de descobrir padrões, perceber anomalias, tratar dados faltantes e estabelecer as variáveis mais relevantes para solucionar o problema. Além disso, a medida que novas versões do dataset forem criadas, as mesmas serão salvas no *wandb*.
 
-![pylint result](./images/pylint_result.png)
+Os passos a serem tomados nesta seção foram baseados no curso de [MLOPS de Ivanovitch - Week 8](https://github.com/ivanovitchm/mlops). 
 
-* Para verificar a nota do código seguindo o *pylint*, basta digitar o seguinte comando:
 
-```
-pylint car_price_prediction.py
-```
-
-* Para executar o código, basta digitar o seguindo comando:
-
-```
-python3 car_price_prediction.py
-```
-
-Quando o código acima for executado, será impresso os resultados do RSME (*Root Mean Square Error*) em função do tipo de modelo (univariável ou multivariável) e da quantidade de vizinhos (*k*). Além disso, duas figuras resumindo esses valores em função do valor de *k* serão salvas dentro da pasta *imagem*.
 
