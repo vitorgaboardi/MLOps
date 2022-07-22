@@ -1,0 +1,36 @@
+2022-07-22 12:12:39,736 INFO    MainThread:20709 [wandb_setup.py:_flush():76] Configure stats pid to 20709
+2022-07-22 12:12:39,754 INFO    MainThread:20709 [wandb_setup.py:_flush():76] Loading settings from /home/vitor/.config/wandb/settings
+2022-07-22 12:12:39,758 INFO    MainThread:20709 [wandb_setup.py:_flush():76] Loading settings from /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/settings
+2022-07-22 12:12:39,763 INFO    MainThread:20709 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-07-22 12:12:39,773 INFO    MainThread:20709 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-07-22 12:12:39,788 INFO    MainThread:20709 [wandb_init.py:_log_setup():461] Logging user logs to /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220722_121239-2zplr0og/logs/debug.log
+2022-07-22 12:12:39,801 INFO    MainThread:20709 [wandb_init.py:_log_setup():462] Logging internal logs to /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220722_121239-2zplr0og/logs/debug-internal.log
+2022-07-22 12:12:39,808 INFO    MainThread:20709 [wandb_init.py:_jupyter_setup():411] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fb9a7ab43d0>
+2022-07-22 12:12:39,842 INFO    MainThread:20709 [wandb_init.py:init():495] calling init triggers
+2022-07-22 12:12:39,859 INFO    MainThread:20709 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {}
+2022-07-22 12:12:39,859 INFO    MainThread:20709 [wandb_init.py:init():548] starting backend
+2022-07-22 12:12:39,873 INFO    MainThread:20709 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-07-22 12:12:40,043 INFO    MainThread:20709 [backend.py:ensure_launched():217] starting backend process...
+2022-07-22 12:12:40,518 INFO    MainThread:20709 [backend.py:ensure_launched():222] started backend process with pid: 32395
+2022-07-22 12:12:40,615 INFO    MainThread:20709 [wandb_init.py:init():558] backend started and connected
+2022-07-22 12:12:50,378 INFO    MainThread:20709 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2022-07-22 12:15:11,652 WARNING MainThread:20709 [wandb_init.py:init():1064] interrupted
+Traceback (most recent call last):
+  File "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 622, in init
+    run._label_probe_notebook(self.notebook)
+  File "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1087, in _label_probe_notebook
+    data = notebook.probe_ipynb()
+  File "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/lib/python3.8/site-packages/wandb/jupyter.py", line 362, in probe_ipynb
+    data = json.load(json_file)
+  File "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/vitor/anaconda2/envs/mlflow-d750c36f5b7e5df09bfb6843ad2bdf7fbf379975/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+KeyboardInterrupt

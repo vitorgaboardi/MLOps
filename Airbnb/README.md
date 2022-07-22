@@ -52,8 +52,29 @@ O próximo passo envolve realizar a leitura do dataset *listings.csv*, que está
 
 Dessa forma, já é possível carregar o dataset completo em alguma outra seção e por outra pessoa utilizando o *wandb*. Esse processo pode demorar dependendo do tamanho do dataset e da velocidade da internet.
 
+## Análise do Dataset
+
+O dataset original possui 24548 amostras e 74 *features*. A priori, tentou-se utilizar o *Pandas Profilling* em todo esse dataset, mas, em função da enorme quantidade de dados e da capacidade limitada do computador utilizado, o *notebook* travava depois de um certo tempo de processamento.
+
+Entretanto, muitas colunas do dataset original são irrelevantes para predizer o preço médio diário de um Airbnb, como *ids*, *url* das residências, descrição do *host*, além de colunas sem nenhum dado. Assim, fez-se uma análise inicial das colunas do dataset e selecionou-se aquelas com uma maior relevância em relação a variável a ser predita. Essa escolha foi feita com base na experiência do autor em resolver problemas semelhantes a esse. Vale salientar que isso não significa que TODAS as *features* escolhidas serão utilizadas para predizer o preço final, mas representa apenas um filtro inicial para fazer uma análise estatística mais aprofundada.
+
+As seguintes colunas foram selecionadas: **latitude, longitude, neighbourhood_cleansed, room_type, accommodates, bathrooms, bedrooms, beds, price, review_scores_rating**.
+
+Após essa seleção, foi necessário realizar um pré-processamento na variável *price* para que pudessemos realizar uma comparação com as outras *features*. Assim, fez-se o seguinte pré-processamento dessa variável:
+
+* Transformar de uma variável do tipo String para numérica, removendo o '$', ',' e convertendo para float.
+* Filtrar anomalias, como casos onde o preço é igual a 0, ou maior do que 5.000 reais (existe uma residência cujo o valor é de 650.476 reais).
+* Remover valores inválidos *Not a number* (*NaN*). 
+
+Essa versão do dataset será salva no *wandb* como *dataset_preprocessed1*. Em seguida, utilizamos o Pandas Profilling para ter mais informações estatísticas das variáveis. Entre essas, uma análise interessante que pode ser feita é correlação de Pearson, que evidencia a relação entre as variáveis selecionadas. A imagem abaixo mostra a relação entre essas variáveis: 
+
+![Figura 2: Correlação de Pearson entre as variáveis selecionadas](./figures/figure2.png)
+
+As colunas *latitude*, *longitude* e *review_scores_rating* não possuem uma alta correlação (positiva ou negativa) com a variável *price* e, portanto, não serão consideradas daqui em diante. Por outro lado, as variáveis *accommodates*, *bedrooms*, *beds* e *price* possuem uma correlação positiva significativa entre si e, portanto, serão consideradas nas próximas etapas. Além disso, embora as variáveis *neighbourhood_cleansed* (representa a informação do bairro) e *room_type* (tipo de quarto) não estejam sendos mostrados, ambas também serão consideradas nas próximas etapas. 
+
+Uma nova versão será do dataset será salva considerado uma limpeza das colunas mencionadas (com excessão de *price* que já foi processada para conseguirmos analisar o Pandas Profilling). Para essa versão, iremos fazer a limpeza através da remoção de amostras com dados faltantes e da remoção anomalias (valores muito altos). Essa nova versão será salva como *dataset_preprocessed2*.
 
 
-
+# Dataset de teste e treinamento 
 
 

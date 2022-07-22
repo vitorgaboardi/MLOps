@@ -1,0 +1,7 @@
+2022-07-22 12:13:56,561 INFO    MainThread:32395 [internal.py:wandb_internal():90] W&B internal server running at pid: 32395, started at: 2022-07-22 12:13:56.560665
+2022-07-22 12:14:47,163 WARNING MainThread:32395 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-07-22 12:14:50,712 WARNING MainThread:32395 [internal.py:wandb_internal():153] Internal process interrupt: 2
+2022-07-22 12:14:50,712 ERROR   MainThread:32395 [internal.py:wandb_internal():156] Internal process interrupted.
+2022-07-22 12:14:51,591 INFO    SenderThread:32395 [sender.py:finish():1114] shutting down sender
+2022-07-22 12:14:51,630 INFO    HandlerThread:32395 [handler.py:finish():806] shutting down handler
+2022-07-22 12:14:51,631 INFO    MainThread:32395 [internal.py:handle_exit():80] Internal process exited
