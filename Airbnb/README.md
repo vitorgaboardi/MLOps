@@ -6,6 +6,8 @@ Inicialmente, neste projeto, iremos realizar o pré-processamento dos dados, sal
 
 Em seguida, o dataset será separado em treinamento e teste, para então treinar um novo modelo e realizar o *deploy* do mesmo online.
 
+Os passos a serem tomados para a solução desse problema e descritos nesse arquivo foram baseados no curso de [MLOPS de Ivanovitch](https://github.com/ivanovitchm/mlops). 
+
 # Instalação de dependências
 
 Antes de realizar a execução dos scripts em Python, será necessário realizar a instalação de algumas dependências. 
@@ -32,9 +34,26 @@ conda activate mlops
 
 # EDA (Exploratory Data Analysis)
 
-Uma vez que o ambiente no conda já esteja instalado na sua máquina, será realizado uma análise dos dados com o objetivo de descobrir padrões, perceber anomalias, tratar dados faltantes e estabelecer as variáveis mais relevantes para solucionar o problema. Além disso, a medida que novas versões do dataset forem criadas, as mesmas serão salvas no *wandb*.
+Uma vez que o ambiente no conda já esteja instalado e ativado na sua máquina, será realizado uma análise dos dados com o objetivo de descobrir padrões, perceber anomalias, tratar dados faltantes e estabelecer as variáveis mais relevantes para solucionar o problema. Além disso, a medida que novas versões do dataset forem criadas, as mesmas serão salvas no *wandb*. 
 
-Os passos a serem tomados nesta seção foram baseados no curso de [MLOPS de Ivanovitch - Week 8](https://github.com/ivanovitchm/mlops). 
+Inicialmente, é necessário executar o *mlflow* levando em consideração os arquivos nesta pasta. Isto é feito através do seguinte comando:
+
+```
+mlflow run .
+```
+
+Ao executar este comando, os comandos dentro do arquivo *MLproject* serão executados. Neste momento, temos apenas a instrução para executar o *Jupyter*, assim, uma nova aba no seu navegador será aberta mostrando todos os arquivos do projeto. O EDA foi desenvolvido utilizando o notebook *EDA.ipynb*. Toda a discussão a seguir leva em consideração este arquivo.
+
+Inicialmente, foi necessário instalar algumas outras bibliotecas adicionais utilizando o pip, sendo elas o *seaborn*, *sklearn*, *pandas_profiling* e *ipywidgets*. Após a instalação deles, importamos todas as bibliotecas que serão utilizadas neste programa.
+
+O próximo passo envolve realizar a leitura do dataset *listings.csv*, que está incluído na pasta do projeto, utilizando o *Pandas*. Este dataset está disponibilizado em [Ivanovitch Silva, Google Drive](https://drive.google.com/file/d/16zF4MHEP_bBxAEWpQgVocPupTjRRAgfP/view). Em seguida, este dataset completo é salvo no *wandb* como um artefato, conforme mostra a figura abaixo.
+
+![Figura 1: Carregando o dataset original no wandb](./figures/figure1.png)
+
+Dessa forma, já é possível carregar o dataset completo em alguma outra seção e por outra pessoa utilizando o *wandb*. Esse processo pode demorar dependendo do tamanho do dataset e da velocidade da internet.
+
+
+
 
 
 
