@@ -1,0 +1,17 @@
+/tmp/ipykernel_24960/240777448.py:1: FutureWarning: The default value of regex will change from True to False in a future version. In addition, single character regular expressions will *not* be treated as literal strings when regex=True.
+  airbnb['price'] = airbnb['price'].str.replace('$', '')
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 14219 entries, 0 to 24545
+Data columns (total 6 columns):
+ #   Column                  Non-Null Count  Dtype
+---  ------                  --------------  -----
+ 0   room_type               14219 non-null  object
+ 1   accommodates            14219 non-null  int64
+ 2   neighbourhood_cleansed  14219 non-null  object
+ 3   bedrooms                14219 non-null  float64
+ 4   beds                    14219 non-null  float64
+ 5   price                   14219 non-null  float64
+dtypes: float64(3), int64(1), object(2)
+memory usage: 777.6+ KB
+Train: (9767, 6)
+Test: (4187, 6)

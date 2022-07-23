@@ -1,0 +1,319 @@
+2022-07-22 21:19:52,253 INFO    MainThread:24960 [wandb_setup.py:_flush():76] Configure stats pid to 24960
+2022-07-22 21:19:52,254 INFO    MainThread:24960 [wandb_setup.py:_flush():76] Loading settings from /home/vitor/.config/wandb/settings
+2022-07-22 21:19:52,254 INFO    MainThread:24960 [wandb_setup.py:_flush():76] Loading settings from /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/settings
+2022-07-22 21:19:52,254 INFO    MainThread:24960 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-07-22 21:19:52,254 INFO    MainThread:24960 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-07-22 21:19:52,255 INFO    MainThread:24960 [wandb_init.py:_log_setup():461] Logging user logs to /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220722_211952-1y8exm3x/logs/debug.log
+2022-07-22 21:19:52,255 INFO    MainThread:24960 [wandb_init.py:_log_setup():462] Logging internal logs to /home/vitor/UFRN/Tecnologia da Informação/2022.1/MLOps/Airbnb/wandb/run-20220722_211952-1y8exm3x/logs/debug-internal.log
+2022-07-22 21:19:52,256 INFO    MainThread:24960 [wandb_init.py:_jupyter_setup():411] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f7d92fa6490>
+2022-07-22 21:19:52,257 INFO    MainThread:24960 [wandb_init.py:init():495] calling init triggers
+2022-07-22 21:19:52,257 INFO    MainThread:24960 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {}
+2022-07-22 21:19:52,257 INFO    MainThread:24960 [wandb_init.py:init():548] starting backend
+2022-07-22 21:19:52,257 INFO    MainThread:24960 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-07-22 21:19:52,278 INFO    MainThread:24960 [backend.py:ensure_launched():217] starting backend process...
+2022-07-22 21:19:52,299 INFO    MainThread:24960 [backend.py:ensure_launched():222] started backend process with pid: 25007
+2022-07-22 21:19:52,307 INFO    MainThread:24960 [wandb_init.py:init():558] backend started and connected
+2022-07-22 21:19:52,443 INFO    MainThread:24960 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2022-07-22 21:19:52,677 INFO    MainThread:24960 [wandb_init.py:init():634] updated telemetry
+2022-07-22 21:19:52,736 INFO    MainThread:24960 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-07-22 21:19:55,976 INFO    MainThread:24960 [wandb_run.py:_on_init():1919] communicating current version
+2022-07-22 21:19:56,138 INFO    MainThread:24960 [wandb_run.py:_on_init():1923] got version response 
+2022-07-22 21:19:56,138 INFO    MainThread:24960 [wandb_init.py:init():700] starting run threads in backend
+2022-07-22 21:20:01,230 INFO    MainThread:24960 [wandb_run.py:_console_start():1893] atexit reg
+2022-07-22 21:20:01,231 INFO    MainThread:24960 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-07-22 21:20:01,233 INFO    MainThread:24960 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-07-22 21:20:01,241 INFO    MainThread:24960 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-07-22 21:20:01,242 INFO    MainThread:24960 [wandb_init.py:init():732] run started, returning control to user process
+2022-07-22 21:20:01,244 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:20:01,244 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:20:02,029 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d560bd790>
+2022-07-22 21:21:56,646 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:03,832 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:03,832 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:04,919 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d542b0970>
+2022-07-22 21:22:08,202 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:08,372 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:08,372 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:09,216 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d531347c0>
+2022-07-22 21:22:13,120 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:15,368 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:15,368 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:16,173 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d5343d670>
+2022-07-22 21:22:26,857 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:33,206 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:33,206 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:33,864 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d33a90a30>
+2022-07-22 21:22:34,752 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:34,866 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:34,868 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:35,784 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7dac068a00>
+2022-07-22 21:22:38,047 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:38,121 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:38,122 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:38,902 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d33cb9c70>
+2022-07-22 21:22:40,622 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:40,855 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:40,856 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:41,680 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d33af9910>
+2022-07-22 21:22:53,603 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:53,650 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:53,651 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:54,423 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d30f65b80>
+2022-07-22 21:22:55,423 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:55,511 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:55,511 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:56,398 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d30f75a00>
+2022-07-22 21:22:57,502 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:22:57,517 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:22:57,517 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:22:58,364 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d33c9d970>
+2022-07-22 21:23:00,468 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:23:00,511 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:23:00,512 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:23:01,407 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d33ffec70>
+2022-07-22 21:23:03,006 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:23:03,069 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:23:03,070 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:23:04,264 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d33adfbb0>
+2022-07-22 21:23:05,921 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:23:06,093 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:23:06,093 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:23:06,922 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d33f81280>
+2022-07-22 21:23:09,422 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:23:09,468 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:23:09,468 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:23:11,249 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d33c1deb0>
+2022-07-22 21:23:12,353 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:23:12,382 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:23:12,382 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:23:13,261 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d30f7ba30>
+2022-07-22 21:23:25,132 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:23:25,147 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:23:25,147 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:23:26,042 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d30e686a0>
+2022-07-22 21:23:30,201 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:24:03,126 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:24:03,126 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:24:03,877 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d30e519d0>
+2022-07-22 21:25:17,499 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:25:22,278 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:25:22,278 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:25:23,062 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d30e65c10>
+2022-07-22 21:25:51,826 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:25:51,832 INFO    MainThread:24960 [wandb_init.py:_pause_backend():374] pausing backend
+2022-07-22 21:25:51,838 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:25:52,326 INFO    MainThread:24960 [wandb_init.py:_pause_backend():378] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d30c6efd0>
+2022-07-22 21:25:55,153 INFO    MainThread:24960 [wandb_init.py:_resume_backend():383] resuming backend
+2022-07-22 21:25:55,157 INFO    MainThread:24960 [wandb_run.py:_finish():1680] finishing run vitor-gabo/airbnb/1y8exm3x
+2022-07-22 21:25:55,369 INFO    MainThread:24960 [jupyter.py:save_history():464] saving 22 cells to _session_history.ipynb
+2022-07-22 21:25:55,371 INFO    MainThread:24960 [wandb_run.py:_config_callback():1131] config_cb ('_wandb', 'session_history') code/_session_history.ipynb None
+2022-07-22 21:25:55,407 INFO    MainThread:24960 [jupyter.py:save_ipynb():380] looking for notebook: EDA.ipynb
+2022-07-22 21:25:55,964 INFO    MainThread:24960 [wandb_init.py:_jupyter_teardown():392] saved code and history: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f7d30e45820>
+2022-07-22 21:25:55,964 INFO    MainThread:24960 [wandb_init.py:_jupyter_teardown():393] cleaning up jupyter logic
+2022-07-22 21:25:55,964 INFO    MainThread:24960 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-07-22 21:25:55,967 INFO    MainThread:24960 [wandb_run.py:_restore():1834] restore
+2022-07-22 21:26:00,039 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 2
+  artifact_count: 7
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127390133
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:00,552 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 2
+  artifact_count: 7
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127390133
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:01,385 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:01,494 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:01,597 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:01,701 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:01,810 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:01,925 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:02,029 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127390133
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:02,132 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127416562
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:02,239 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127425664
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:02,346 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127425664
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:02,450 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127425664
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:02,554 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127425664
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:02,658 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127425664
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:02,761 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127425664
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:03,536 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127425664
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+
+2022-07-22 21:26:03,978 INFO    MainThread:24960 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 7
+  artifact_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 127425664
+  total_bytes: 127425664
+  deduped_bytes: 5506038
+}
+local_info {
+}
+
+2022-07-22 21:26:05,408 INFO    MainThread:24960 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-07-22 21:26:05,409 INFO    MainThread:24960 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-07-22 21:26:05,424 INFO    MainThread:24960 [wandb_run.py:_footer_sync_info():3055] logging synced files
