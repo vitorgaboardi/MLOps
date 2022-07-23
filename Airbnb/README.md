@@ -79,3 +79,10 @@ Uma nova versão será do dataset será salva considerado uma limpeza das coluna
 
 O dataset de teste e treinamento será dividido em uma proporção de 30% e 70%, respectivamente. Ambos os datasets também foram salvos no *wandb*.
 
+# Video
+
+Um video de 10 minutos foi gravado explicando, de forma geral, o que foi desenvolvido neste repositório.
+
+Vídeo resumindo o projeto: [![Open in Loom](https://img.shields.io/badge/-Video-83DA77?style=flat-square&logo=loom)](https://www.loom.com/share/070c9138466c4f6eba1378bf3dc5d7db)
+
+*OBS: Foram utilizados 10 minutos (5 da Atividade 2 e 5 da Atividade 3).*
